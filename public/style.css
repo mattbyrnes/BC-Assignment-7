@@ -1,0 +1,159 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0px;
+}
+
+.btn {
+    margin: auto 10px;
+    background: #207ce5;
+    border-radius: 20px;
+    color: #fff;
+}
+
+button {
+    font-size: 20px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.circle {
+    border-radius: 20px;
+    padding: 10px 12px;
+}
+
+#holder {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.todoitem {
+    float: left;
+}
+
+.edit, .delete {
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+
+.input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+p {
+    margin: 2px auto;
+    font-size: 14px;
+}
+
+b {
+    font-size: 18px;
+}
+
+.edit-box {
+    background:#ddd;
+}
+
+header {
+    grid-row: span 1;
+    grid-column: span 1;
+    align-items: center;
+    color: white;   
+    padding: 0 20px;
+
+background: rgb(73,155,234); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 */
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+main{
+    color:#000;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+}
+
+.todo-ui {
+    text-align: center; 
+    width: 100%; 
+    margin: 0px;
+    background: #eee;
+}
+
+.todo-input {
+    display: inline-flex;
+}
+
+#item-id{
+    border-radius: 20px;
+    border: 1px solid blue;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 10px;
+    border-color: #207ce5;
+}
+
+.todo-item{
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 10% 75% 10%; 
+    text-align: left;
+}
+
+
+@media only screen and (min-width:600px){
+
+
+    #holder {
+        width: 50%;
+    }
+
+    #item-id{
+        width: 400px;
+    }
+    
+}
