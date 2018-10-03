@@ -9,7 +9,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost/todomaster', { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost/todomaster', { useNewUrlParser: true });
+
+mongoose.connect('mongodb://mattbyrnes:todopass1@ds121183.mlab.com:21183/byrnes-todo', { useNewUrlParser: true });
 
 // Routes
 require('./routes/api-routes')(app);
